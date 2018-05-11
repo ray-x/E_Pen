@@ -1,7 +1,8 @@
 # FPGA Code
 * ./FPGA
-* ./FPGA/src£ºverilog Please check ./FPGA/src/List.txt
-* ./FPGA/EPointer£ºFPGA Project file,top.bit Bitstream
+* ./FPGA/src verilog Please check ./FPGA/src/List.txt
+* ./FPGA/EPointer FPGA Project file
+   top.bit Bitstream
 
 
 ISE 12.1 +
