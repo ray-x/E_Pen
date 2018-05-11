@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# PlanAhead v11.1
+# Build 44534 by hdbuild on Thu Mar  5 11:02:58 PST 2009
+# Start of session at: 10-7-7 13:44:46
+# Process ID: 2812
+#-----------------------------------------------------------
+source C:/Users/bjtu/ISEWork/EPointer/EPointer/pa.fromHdlPorts.tcl
+# hdi::project new -name EPointer -dir C:/Users/bjtu/ISEWork/EPointer/EPointer/patmp
+# hdi::project setArch -name EPointer -arch spartan3a
+# hdi::design setOptions -project EPointer -top netlist_1_EMPTY
+# hdi::param set -name project.paUcfFile -svalue C:/Users/bjtu/ISEWork/EPointer/src/top.ucf
+# hdi::floorplan new -name floorplan_1 -part xc3s50antqg144-4 -project EPointer
+# hdi::port import -project EPointer -verilog EPointer_pa_ports.v work
+# hdi::pconst import -project EPointer -floorplan floorplan_1 -file C:/Users/bjtu/ISEWork/EPointer/src/top.ucf
+hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_wr_en -slewType FAST
+hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_rd_en -slewType FAST
+hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_wr_clk -slewType FAST
+hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_rd_clk -slewType FAST
+hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_wr_en -driveStrength 24
+hdi::floorplan save -name floorplan_1 -project EPointer
+#-----------------------------------------------------------
+# End of session at: 10-7-7 13:46:37
+# Process ID: 2812
+#-----------------------------------------------------------

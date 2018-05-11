@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Project Version="3" Minor="4">
+	<MacroFamily Arch="spartan3a" Part="xc3s50antqg144-4"/>
+	<NetlistH Dir="netlists/netlist_1" File="nlh.xml" State="current">
+		<FloorplanH Dir="floorplans/floorplan_1" File="pfi.xml" State="open"/>
+	</NetlistH>
+	<DefaultLaunch Dir="$PRUNDIR"/>
+</Project>
+

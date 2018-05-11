@@ -1,0 +1,53 @@
+INFO: [HD-Application 1] Opened log file C:\Users\bjtu\ISEWork\EPointer\EPointer\planAhead.log
+INFO: [HD-Application 2] Opened journal file C:\Users\bjtu\ISEWork\EPointer\EPointer\planAhead.jou
+#-----------------------------------------------------------
+# PlanAhead v11.1
+# Build 44534 by hdbuild on Thu Mar  5 11:02:58 PST 2009
+# Start of session at: 10-7-7 13:44:46
+# Process ID: 2812
+#-----------------------------------------------------------
+INFO: [HD-RTPRIM 0] Parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\verilog.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\verilog.xml'
+INFO: [HD-RTPRIM 0] Parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\vhdl.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\vhdl.xml'
+INFO: [HD-RTPRIM 0] Parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\ucf.xml'
+INFO: [HD-RTPRIM 1] Finished parsing template file 'C:\Xilinx\11.1\ISE\data\projnav\templates\ucf.xml'
+Command> source C:/Users/bjtu/ISEWork/EPointer/EPointer/pa.fromHdlPorts.tcl
+# hdi::project new -name EPointer -dir C:/Users/bjtu/ISEWork/EPointer/EPointer/patmp
+# hdi::project setArch -name EPointer -arch spartan3a
+# hdi::design setOptions -project EPointer -top netlist_1_EMPTY
+# hdi::param set -name project.paUcfFile -svalue C:/Users/bjtu/ISEWork/EPointer/src/top.ucf
+# hdi::floorplan new -name floorplan_1 -part xc3s50antqg144-4 -project EPointer
+INFO: [HD-ArchReader 14] Reading macro library C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\hd_int_macros.edn
+INFO: [HD-EDIFIN 0] Parsing Edif File 'C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\hd_int_macros.edn'
+INFO: [HD-EDIFIN 1] Finished Parsing Edif File 'C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\hd_int_macros.edn'
+INFO: [HD-ArchReader 7] Loading clock regions from C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\3s50an\ClockRegion.xml
+INFO: [HD-ArchReader 8] Loading clock buffers from C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\3s50an\ClockBuffers.xml
+INFO: [HD-ArchReader 3] Loading package from C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\3s50an\tqg144\Package.xml
+INFO: [HD-ArchReader 4] Loading io standards from C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\IOStandards.xml
+INFO: [HD-ArchReader 5] Loading pkg sso from C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\3s50an\tqg144\SSORules.xml
+INFO: [HD-GDRC 0] Loading list of drcs for the architecture : C:\Xilinx\11.1\PlanAhead\parts\xilinx\spartan3a\drc.xml
+# hdi::port import -project EPointer -verilog EPointer_pa_ports.v work
+INFO: [HD-RTLIN 0] Removing all analyzed parse trees
+INFO: [HD-RTLIN 0] Removing all libraries
+INFO: [HD-RTLIN 2] Analyzing VHDL file \"C:\Xilinx\11.1\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd\" into library synplify
+INFO: [HD-RTLIN 2] Analyzing package attributes
+INFO: [HD-RTLIN 2] Analyzing Verilog file \"EPointer_pa_ports.v\" into library work
+INFO: [HD-RTLIN 2] Analyzing module netlist_1_EMPTY
+INFO: [HD-RTLIN 2] Compiling module netlist_1_EMPTY
+INFO: [HD-RTLIN 0] Removing all analyzed parse trees
+INFO: [HD-RTLIN 0] Memory usage after 'Elaborate()': 2954
+INFO: [HD-RTLIN 0] Translating model
+# hdi::pconst import -project EPointer -floorplan floorplan_1 -file C:/Users/bjtu/ISEWork/EPointer/src/top.ucf
+INFO: [HD-UCFReader 0] Parsing UCF File : C:/Users/bjtu/ISEWork/EPointer/src/top.ucf
+INFO: [HD-UCFReader 1] Finished Parsing UCF File : C:/Users/bjtu/ISEWork/EPointer/src/top.ucf
+Command> hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_wr_en -slewType FAST
+Command> hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_rd_en -slewType FAST
+Command> hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_wr_clk -slewType FAST
+Command> hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_rd_clk -slewType FAST
+Command> hdi::port configure -project EPointer -floorplan floorplan_1 -names mcu_wr_en -driveStrength 24
+Command> hdi::floorplan save -name floorplan_1 -project EPointer
+#-----------------------------------------------------------
+# End of session at: 10-7-7 13:46:37
+# Process ID: 2812
+#-----------------------------------------------------------

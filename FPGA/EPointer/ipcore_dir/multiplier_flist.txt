@@ -1,0 +1,14 @@
+# Output products list for <multiplier>
+multiplier.asy
+multiplier.gise
+multiplier.ise
+multiplier.ngc
+multiplier.sym
+multiplier.v
+multiplier.veo
+multiplier.vhd
+multiplier.vho
+multiplier.xco
+multiplier.xise
+multiplier_flist.txt
+multiplier_xmdf.tcl

@@ -1,0 +1,9 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf01s          [1 M]
+FF
+Untitled
+C:/Users/bjtu/ISEWork/EPointer/EPointer/burn_files
+
+MCS
+No

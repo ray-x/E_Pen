@@ -1,0 +1,7 @@
+WARNING:PhysDesignRules:367 - The signal <mcu_wr_clk_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+INFO:PhysDesignRules:772 - To achieve optimal frequency synthesis performance
+   with the CLKFX and CLKFX180 outputs of the DCM comp
+   clock_gene_ins/DCM_SP_INST, consult the device Interactive Data Sheet.
+DRC detected 0 errors and 1 warnings.  Please see the previously displayed
+individual error or warning messages for more details.

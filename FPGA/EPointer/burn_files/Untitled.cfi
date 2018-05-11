@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator L.33
+# Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION L.33
+DATE            07/05/2010 - 19:53
+SOURCE          C:\Users\bjtu\ISEWork\EPointer\EPointer\burn_files\Untitled.mcs
+DEVICE          XCF01S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x0129FCEF
+START_ADDRESS   0x00000000 END_ADDRESS 0x0000D5AD DIRECTION_UP   "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.bit" 3s50antqg144

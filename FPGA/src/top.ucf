@@ -1,0 +1,252 @@
+##############################################################################
+## Copyright (c) 2006 Xilinx, Inc.
+## This design is confidential and proprietary of Xilinx, All Rights Reserved.
+##############################################################################
+##   ____  ____
+##  /   /\/   /
+## /___/  \  /   Vendor:        Xilinx
+## \   \   \/    Version:       1.0.0
+##  \   \        Filename:      frac_controller.ucf
+##  /   /        Date Created:  December 25, 2006
+## /___/   /\    Last Modified: December 25, 2006
+## \   \  /  \
+##  \___\/\___\
+##
+## Devices:   Spartan-3 Generation FPGA
+## Purpose:   Constraints for fractal demo
+## Contact:   crabill@xilinx.com
+## Reference: None
+##
+## Revision History:
+##   Rev 1.0.0 - (crabill) Created December 25, 2006 for PCB revision C.
+##
+##############################################################################
+##
+## LIMITED WARRANTY AND DISCLAIMER. These designs are provided to you "as is".
+## Xilinx and its licensors make and you receive no warranties or conditions,
+## express, implied, statutory or otherwise, and Xilinx specifically disclaims
+## any implied warranties of merchantability, non-infringement, or fitness for
+## a particular purpose. Xilinx does not warrant that the functions contained
+## in these designs will meet your requirements, or that the operation of
+## these designs will be uninterrupted or error free, or that defects in the
+## designs will be corrected. Furthermore, Xilinx does not warrant or make any
+## representations regarding use or the results of the use of the designs in
+## terms of correctness, accuracy, reliability, or otherwise.
+##
+## LIMITATION OF LIABILITY. In no event will Xilinx or its licensors be liable
+## for any loss of data, lost profits, cost or procurement of substitute goods
+## or services, or for any special, incidental, consequential, or indirect
+## damages arising from the use or operation of the designs or accompanying
+## documentation, however caused and on any theory of liability. This
+## limitation will apply even if Xilinx has been advised of the possibility
+## of such damage. This limitation shall apply not-withstanding the failure
+## of the essential purpose of any limited remedies herein.
+##
+##############################################################################
+## Copyright (c) 2006 Xilinx, Inc.
+## This design is confidential and proprietary of Xilinx, All Rights Reserved.
+##############################################################################
+# On this board, VCCAUX is 3.3 volts.
+CONFIG VCCAUX = "3.3" ;
+
+# Configure SUSPEND mode options.
+CONFIG ENABLE_SUSPEND  = FILTERED;
+
+# FILTERED is appropriate for use with the switch on this board. Other allowed
+# settings are NO or UNFILTERED.  If set NO, the AWAKE pin becomes general I/O.
+# Please read the FPGA User Guide for more information.
+# Configure POST_CRC options.
+CONFIG POST_CRC  = DISABLE;
+
+# DISABLE the post-configuration CRC checking so INIT_B is available for
+# general I/O after configuration is done.  On this board, INIT_B is used
+# after configuration to control the Platform Flash device.  Other allowed
+# settings are ENABLE.  Please read the FPGA User Guide for more information.
+##############################################################################
+# Timing constraints for this design.
+##############################################################################
+##############################################################################
+# These are sample constraints for the three clock inputs.  You will need
+# to change these constraints to suit your application.  Please read the
+# FPGA Development System Reference Guide for more information on expressing
+# timing constraints for your design.
+##############################################################################
+NET "clk" LOC = P59 | IOSTANDARD = "LVCMOS33" | PERIOD = 20 ns;
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "clk" LOC = P59;
+
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN "clock_gene_ins/DCM_SP_INST.CLKIN" CLOCK_DEDICATED_ROUTE = FALSE;
+
+#############################################################
+##    cmos interface
+#############################################################
+NET "cmos_rst" IOSTANDARD = LVCMOS33;
+NET "cmos_rst" DRIVE = 8;
+NET "cmos_rst" SLEW = FAST;
+NET "cmos_rst" LOC = P51;
+NET "cmos_vsync" IOSTANDARD = LVCMOS33;
+NET "cmos_vsync" DRIVE = 8;
+NET "cmos_vsync" SLEW = FAST;
+NET "cmos_vsync" LOC = P53;
+NET "pwdn" IOSTANDARD = LVCMOS33;
+NET "pwdn" DRIVE = 8;
+NET "pwdn" SLEW = FAST;
+NET "pwdn" LOC = P37;
+NET "pix_cmos[7]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[7]" DRIVE = 8;
+NET "pix_cmos[7]" SLEW = FAST;
+NET "pix_cmos[7]" LOC = P49;
+NET "xclk" IOSTANDARD = LVCMOS33;
+NET "xclk" DRIVE = 8;
+NET "xclk" SLEW = FAST;
+NET "xclk" LOC = P48;
+NET "pix_cmos[6]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[6]" DRIVE = 8;
+NET "pix_cmos[6]" SLEW = FAST;
+NET "pix_cmos[6]" LOC = P47;
+NET "pclk" IOSTANDARD = LVCMOS33;
+NET "pclk" DRIVE = 8;
+NET "pclk" SLEW = FAST;
+NET "pclk" LOC = P54;
+NET "pix_cmos[0]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[0]" DRIVE = 8;
+NET "pix_cmos[0]" SLEW = FAST;
+NET "pix_cmos[0]" LOC = P44;
+NET "pix_cmos[1]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[1]" DRIVE = 8;
+NET "pix_cmos[1]" SLEW = FAST;
+NET "pix_cmos[1]" LOC = P42;
+NET "pix_cmos[2]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[2]" DRIVE = 8;
+NET "pix_cmos[2]" SLEW = FAST;
+NET "pix_cmos[2]" LOC = P41;
+NET "pix_cmos[3]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[3]" DRIVE = 8;
+NET "pix_cmos[3]" SLEW = FAST;
+NET "pix_cmos[3]" LOC = P43;
+NET "pix_cmos[4]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[4]" DRIVE = 8;
+NET "pix_cmos[4]" SLEW = FAST;
+NET "pix_cmos[4]" LOC = P45;
+NET "pix_cmos[5]" IOSTANDARD = LVCMOS33;
+NET "pix_cmos[5]" DRIVE = 8;
+NET "pix_cmos[5]" SLEW = FAST;
+NET "pix_cmos[5]" LOC = P46;
+NET "cmos_hsync" IOSTANDARD = LVCMOS33;
+NET "cmos_hsync" DRIVE = 8;
+NET "cmos_hsync" SLEW = FAST;
+NET "cmos_hsync" LOC = P50;
+
+
+NET "led[0]" LOC = P58 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "led[1]" LOC = P131 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "led[2]" LOC = P130 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+NET "mcu_ctrl" LOC = P103 | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = FAST;
+
+
+
+##############################################################################
+
+##############################################################################
+# USB FT245MB port
+##############################################################################
+NET "mcu_data[0]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[0]" DRIVE = 8;
+NET "mcu_data[0]" SLEW = SLOW;
+NET "mcu_data[0]" LOC = P110;
+NET "mcu_data[1]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[1]" DRIVE = 8;
+NET "mcu_data[1]" SLEW = SLOW;
+NET "mcu_data[1]" LOC = P111;
+NET "mcu_data[2]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[2]" DRIVE = 8;
+NET "mcu_data[2]" SLEW = SLOW;
+NET "mcu_data[2]" LOC = P112;
+NET "mcu_data[3]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[3]" DRIVE = 8;
+NET "mcu_data[3]" SLEW = SLOW;
+NET "mcu_data[3]" LOC = P113;
+NET "mcu_data[4]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[4]" DRIVE = 8;
+NET "mcu_data[4]" SLEW = SLOW;
+NET "mcu_data[4]" LOC = P114;
+NET "mcu_data[5]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[5]" DRIVE = 8;
+NET "mcu_data[5]" SLEW = SLOW;
+NET "mcu_data[5]" LOC = P115;
+NET "mcu_data[6]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[6]" DRIVE = 8;
+NET "mcu_data[6]" SLEW = SLOW;
+NET "mcu_data[6]" LOC = P116;
+NET "mcu_data[7]" IOSTANDARD = LVCMOS33;
+NET "mcu_data[7]" DRIVE = 8;
+NET "mcu_data[7]" SLEW = SLOW;
+NET "mcu_data[7]" LOC = P117;
+
+NET "mcu_wr_en" IOSTANDARD = LVCMOS33;
+NET "mcu_wr_en" LOC = P97;
+NET "mcu_rd_en" IOSTANDARD = LVCMOS33;
+NET "mcu_rd_en" DRIVE = 8;
+NET "mcu_rd_en" LOC = P99;
+NET "mcu_wr_clk" IOSTANDARD = LVCMOS33;
+NET "mcu_wr_clk" DRIVE = 8;
+NET "mcu_wr_clk" LOC = P105;
+NET "mcu_rd_clk" IOSTANDARD = LVCMOS33;
+NET "mcu_rd_clk" DRIVE = 8;
+NET "mcu_rd_clk" LOC = P104;
+
+#C51Mod1
+NET "frame_start" IOSTANDARD = LVCMOS33;
+NET "frame_start" DRIVE = 8;
+NET "frame_start" SLEW = SLOW;
+NET "frame_start" LOC = P93;
+#C51Mod2
+NET "column_start" IOSTANDARD = LVCMOS33;
+NET "column_start" DRIVE = 8;
+NET "column_start" SLEW = SLOW;
+NET "column_start" LOC = P96;
+
+
+
+##############################################################################
+# Discrete Indicators (LED)
+##############################################################################
+
+#NET "LED<0>"        LOC = "R20"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LED<1>"        LOC = "T19"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LED<2>"        LOC = "U20"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LED<3>"        LOC = "U19"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LED<4>"        LOC = "V19"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LED<5>"        LOC = "V20"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LED<6>"        LOC = "Y22"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+#NET "LED<7>"        LOC = "W21"  | IOSTANDARD = LVCMOS33 | DRIVE = 8 | SLEW = SLOW ;
+
+
+##############################################################################
+# Mechanical Switches (SW)
+##############################################################################
+
+#NET "SW<0>"         LOC = "V8"   | IOSTANDARD = LVCMOS33 ;
+#NET "SW<1>"         LOC = "U10"  | IOSTANDARD = LVCMOS33 ;
+#NET "SW<2>"         LOC = "U8"   | IOSTANDARD = LVCMOS33 ;
+#NET "SW<3>"         LOC = "T9"   | IOSTANDARD = LVCMOS33 ;
+##############################################################################
+# Other Signals
+##############################################################################
+NET "nRst" IOSTANDARD = LVCMOS33;
+NET "nRst" DRIVE = 8;
+NET "nRst" SLEW = SLOW;
+NET "nRst" LOC = P67;
+NET "nRst" CLOCK_DEDICATED_ROUTE = FALSE;
+##############################################################################
+
+NET "mcu_rd_clk" PULLUP;
+NET "mcu_rd_en" PULLUP;
+NET "mcu_wr_clk" PULLUP;
+NET "mcu_wr_en" PULLUP;
+NET "mcu_rd_clk" SLEW = FAST;
+NET "mcu_rd_en" SLEW = FAST;
+NET "mcu_wr_clk" SLEW = FAST;
+NET "mcu_wr_en" DRIVE = 8;
+NET "mcu_wr_en" SLEW = FAST;

@@ -1,0 +1,61 @@
+##############################################################
+#
+# Xilinx Core Generator version 11.1
+# Date: Fri Jan 07 02:02:46 2011
+#
+##############################################################
+#
+#  This file contains the customisation parameters for a
+#  Xilinx CORE Generator IP GUI. It is strongly recommended
+#  that you do not manually alter this file as it may cause
+#  unexpected and unsupported behavior.
+#
+##############################################################
+#
+# BEGIN Project Options
+SET addpads = False
+SET asysymbol = True
+SET busformat = BusFormatAngleBracketNotRipped
+SET createndf = False
+SET designentry = VHDL
+SET device = xc3s50an
+SET devicefamily = spartan3a
+SET flowvendor = Foundation_ISE
+SET formalverification = False
+SET foundationsym = False
+SET implementationfiletype = Ngc
+SET package = tqg144
+SET removerpms = False
+SET simulationfiles = Behavioral
+SET speedgrade = -4
+SET verilogsim = True
+SET vhdlsim = True
+# END Project Options
+# BEGIN Select
+SELECT Multiplier family Xilinx,_Inc. 11.0
+# END Select
+# BEGIN Parameters
+CSET ccmimp=Distributed_Memory
+CSET clockenable=true
+CSET component_name=multiplier
+CSET constvalue=129
+CSET internaluser=0
+CSET multiplier_construction=Use_Mults
+CSET multtype=Parallel_Multiplier
+CSET optgoal=Speed
+CSET outputwidthhigh=17
+CSET outputwidthlow=0
+CSET pipestages=1
+CSET portatype=Unsigned
+CSET portawidth=8
+CSET portbtype=Unsigned
+CSET portbwidth=10
+CSET roundpoint=0
+CSET sclrcepriority=SCLR_Overrides_CE
+CSET syncclear=false
+CSET use_custom_output_width=false
+CSET userounding=false
+CSET zerodetect=false
+# END Parameters
+GENERATE
+# CRC: 9e32897e

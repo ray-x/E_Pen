@@ -1,0 +1,14 @@
+# Output products list for <dual_port_ram1024>
+dual_port_ram1024.asy
+dual_port_ram1024.gise
+dual_port_ram1024.ise
+dual_port_ram1024.ngc
+dual_port_ram1024.sym
+dual_port_ram1024.v
+dual_port_ram1024.veo
+dual_port_ram1024.vhd
+dual_port_ram1024.vho
+dual_port_ram1024.xco
+dual_port_ram1024.xise
+dual_port_ram1024_flist.txt
+dual_port_ram1024_xmdf.tcl

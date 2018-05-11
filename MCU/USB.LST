@@ -1,0 +1,85 @@
+C51 COMPILER V8.08   USB                                                                   06/04/2012 21:34:53 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE USB
+OBJECT MODULE PLACED IN USB.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.exe USB.c DB OE
+
+line level    source
+
+   1          /*******************************************/
+   2          //文件名：USB.c
+   3          //隶属工程：
+   4          //作者：Binjie Tu
+   5          //创建时间：2010.07.06
+   6          //最后修改时间：
+   7          //描述：USB的相关操作
+   8          /*******************************************/
+   9          
+  10          #include "USB.h"
+  11          
+  12          // ==============================
+  13          // USB API中断
+  14          // 
+  15          // 
+  16          // ==============================
+  17          void  USB_API_TEST_ISR(void)  interrupt   17
+  18          {
+  19   1         BYTE  INTVAL   =  Get_Interrupt_Source(); // Determine type of API interrupts
+  20   1         if (INTVAL  &  USB_RESET)              // Bus Reset Event, go to Wait State
+  21   1         {
+  22   2            ;
+  23   2         }
+  24   1      
+  25   1         if (INTVAL  &  DEVICE_OPEN)            // Device opened on host, go to Idle
+  26   1         {
+  27   2            ;
+  28   2         }
+  29   1      
+  30   1         if (INTVAL  &  TX_COMPLETE)
+  31   1         {
+  32   2           ;
+  33   2         }
+  34   1         if (INTVAL  &  RX_COMPLETE)            // RX Complete, go to RX Setup or RX file state
+  35   1         {
+  36   2           Block_Read(USBRxBuf, 8);                           // 收到上位机命令
+  37   2               ProcessID = PRO_HANDLE;                                // 转到命令处理
+  38   2               IntSignal = TRUE;
+  39   2         }
+  40   1         if (INTVAL  &  DEVICE_CLOSE)           // Device closed, wait for re-open
+  41   1         {
+  42   2           ;
+  43   2         }
+  44   1         if (INTVAL  &  FIFO_PURGE)             // Fifo purged, go to Idle State
+  45   1         {
+  46   2           ;
+  47   2         }
+  48   1         
+  49   1         
+  50   1      
+  51   1      }
+  52          
+  53          
+  54          
+  55                          // WriteStageLength = ((BytesToWrite - BytesWrote) > MAX_BLOCK_SIZE_WRITE)? MAX_BLOCK_SIZE_WRITE:(BytesT
+C51 COMPILER V8.08   USB                                                                   06/04/2012 21:34:53 PAGE 2   
+
+             -oWrite - BytesWrote);
+  56                   // BytesWrote  += Block_Write((BYTE*)(ReadIndex), WriteStageLength);
+  57                   // ReadIndex += WriteStageLength;
+  58                           
+  59                          // BytesRead   =  Block_Read(&Buffer,  3);      // Read Setup Message
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     80    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

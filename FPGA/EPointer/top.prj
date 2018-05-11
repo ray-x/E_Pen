@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/dual_port_ram1024.v"
+verilog work "../src/data_proc.v"
+verilog work "../src/cmos_ctrl.v"
+verilog work "clock_gene.v"
+verilog work "../src/top.v"

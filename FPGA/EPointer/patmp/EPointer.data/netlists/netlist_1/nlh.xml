@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<NetlistInfo Version="1" Minor="6">
+	<NetlistHandle Name="netlist_1" TargetPart="xc3s50antqg144-4" TopFile="top.edn">
+	</NetlistHandle>
+</NetlistInfo>
+

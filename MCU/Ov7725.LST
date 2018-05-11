@@ -1,0 +1,800 @@
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE OV7725
+OBJECT MODULE PLACED IN Ov7725.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.exe Ov7725.c DB OE
+
+line level    source
+
+   1          /*******************************************/
+   2          //文件名：Ov7725.c
+   3          //隶属工程：
+   4          //作者：Binjie Tu
+   5          //创建时间：2010.07.06
+   6          //最后修改时间：
+   7          //描述：Ov7725驱动
+   8          /*******************************************/
+   9          
+  10          /* SCCB操作相关 */
+  11          #include "Ov7725.h"
+  12          
+  13          
+  14          code char ov7725_vga_init[] = 
+  15          {       
+  16              0x12, 0x80,     
+  17                        
+  18              0x3d, 0x03,     
+  19              0x17, 0x22,  
+  20              0x18, 0xa4,  
+  21              0x19, 0x07,  
+  22              0x1a, 0xf0,  
+  23              0x32, 0x00,  
+  24              0x29, 0xa0,  
+  25              0x2c, 0xf0,  
+  26              0x2a, 0x00,  
+  27              0x11, 0x00,//00/01/03/07 for 60/30/15/7.5fps   
+  28              
+  29              0x42, 0x7f,  
+  30              0x4d, 0x09,  
+  31              0x63, 0xe0,  
+  32              0x64, 0xff,  
+  33              0x65, 0x20,  
+  34              0x66, 0x00,  
+  35              0x67, 0x48,      
+  36              
+  37              0x13, 0xf0,      
+  38              0x0d, 0x41,//0x51/0x61/0x71 for different AEC/AGC window   
+  39              0x0f, 0xc5,  
+  40              0x14, 0x11,//0x81   
+  41              0x22, 0xff,//ff/7f/3f/1f for 60/30/15/7.5fps   
+  42              0x23, 0x01,//01/03/07/0f for 60/30/15/7.5fps   
+  43              0x24, 0x50,//0x80   
+  44              0x25, 0x30,//5a   
+  45              0x26, 0xa1,//c1   
+  46              0x2b, 0x00,//ff   
+  47            
+  48              0x6b, 0xaa,  
+  49              0x13, 0xfe,  
+  50                        
+  51              0x90, 0x05,  
+  52              0x91, 0x01,  
+  53              0x92, 0x03,  
+  54              0x93, 0x00,  
+  55              
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 2   
+
+  56              0x94, 0x5f,//b0   
+  57              0x95, 0x53,//9d   
+  58              0x96, 0x11,//13   
+  59              0x97, 0x1a,//16   
+  60              0x98, 0x3d,//7b   
+  61              0x99, 0x5a,//91   
+  62              0x9a, 0x1e,//1e    
+  63            
+  64              0x9b, 0x00,  
+  65              0x9c, 0x25,  
+  66              0x9e, 0x81,  
+  67              0xa6, 0x06,  
+  68              //modified saturation initialization value by pw 2008-03-04   
+  69              0xa7, 0x65,  
+  70              0xa8, 0x65,  
+  71              
+  72              0x7e, 0x0c,  
+  73              0x7f, 0x16,  
+  74              0x80, 0x2a,  
+  75              0x81, 0x4e,  
+  76              0x82, 0x61,  
+  77              0x83, 0x6f,  
+  78              0x84, 0x7b,  
+  79              0x85, 0x86,  
+  80              0x86, 0x8e,  
+  81              0x87, 0x97,  
+  82              0x88, 0xa4,  
+  83              0x89, 0xaf,  
+  84              0x8a, 0xc5,  
+  85              0x8b, 0xd7,  
+  86              0x8c, 0xe8,  
+  87              0x8d, 0x20,  
+  88                         
+  89          #if 0   
+                  0x34, 0x00,  
+                  0x33, 0x40,//0x66/0x99   
+                  0x22, 0x99,  
+                  0x23, 0x03,  
+                  0x4a, 0x10,  
+                  0x49, 0x10,  
+                  0x4b, 0x14,  
+                  0x4c, 0x17,  
+                  0x46, 0x05,  
+                  0x0e, 0x65,  
+              #endif       
+ 101                
+ 102              0x69, 0x5d,  
+ 103              0x0c, 0x00,  // swap the YUV  
+ 104                        
+ 105              0x33, 0x00,//0x66/0x99   
+ 106              0x0e, 0x65,  
+ 107                        
+ 108              0x13, 0xff, //Enable banding Filter   
+ 109              0x22, 0xab, //Banding Filter Minimum AEC Value   
+ 110              0x23, 0x03, //Banding Filter Step
+ 111              
+ 112              0x00, 0x00,   
+ 113           
+ 114          } ;
+ 115          
+ 116          code char ov7725_vgaimg_init[] = 
+ 117          {       
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 3   
+
+ 118              0x12, 0x80,     
+ 119                        
+ 120              0x3d, 0x03,     
+ 121              0x17, 0x22,  
+ 122              0x18, 0xa4,  
+ 123              0x19, 0x07,  
+ 124              0x1a, 0xf0,  
+ 125              0x32, 0x00,  
+ 126              0x29, 0xa0,  
+ 127              0x2c, 0xf0,  
+ 128              0x2a, 0x00,  
+ 129              0x11, 0x3f,//00/01/03/07 for 60/30/15/7.5fps   
+ 130              
+ 131              0x42, 0x7f,  
+ 132              0x4d, 0x09,  
+ 133              0x63, 0xe0,  
+ 134              0x64, 0xff,  
+ 135              0x65, 0x20,  
+ 136              0x66, 0x00,  
+ 137              0x67, 0x48,      
+ 138              
+ 139              0x13, 0xf0,      
+ 140              0x0d, 0x41,//0x51/0x61/0x71 for different AEC/AGC window   
+ 141              0x0f, 0xc5,  
+ 142              0x14, 0x11,//0x81   
+ 143              0x22, 0xff,//ff/7f/3f/1f for 60/30/15/7.5fps   
+ 144              0x23, 0x01,//01/03/07/0f for 60/30/15/7.5fps   
+ 145              0x24, 0x50,//0x80   
+ 146              0x25, 0x30,//5a   
+ 147              0x26, 0xa1,//c1   
+ 148              0x2b, 0x00,//ff   
+ 149            
+ 150              0x6b, 0xaa,  
+ 151              0x13, 0xfe,  
+ 152                        
+ 153              0x90, 0x05,  
+ 154              0x91, 0x01,  
+ 155              0x92, 0x03,  
+ 156              0x93, 0x00,  
+ 157              
+ 158              0x94, 0x5f,//b0   
+ 159              0x95, 0x53,//9d   
+ 160              0x96, 0x11,//13   
+ 161              0x97, 0x1a,//16   
+ 162              0x98, 0x3d,//7b   
+ 163              0x99, 0x5a,//91   
+ 164              0x9a, 0x1e,//1e    
+ 165            
+ 166              0x9b, 0x00,  
+ 167              0x9c, 0x25,  
+ 168              0x9e, 0x81,  
+ 169              0xa6, 0x06,  
+ 170              //modified saturation initialization value by pw 2008-03-04   
+ 171              0xa7, 0x65,  
+ 172              0xa8, 0x65,  
+ 173              
+ 174              0x7e, 0x0c,  
+ 175              0x7f, 0x16,  
+ 176              0x80, 0x2a,  
+ 177              0x81, 0x4e,  
+ 178              0x82, 0x61,  
+ 179              0x83, 0x6f,  
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 4   
+
+ 180              0x84, 0x7b,  
+ 181              0x85, 0x86,  
+ 182              0x86, 0x8e,  
+ 183              0x87, 0x97,  
+ 184              0x88, 0xa4,  
+ 185              0x89, 0xaf,  
+ 186              0x8a, 0xc5,  
+ 187              0x8b, 0xd7,  
+ 188              0x8c, 0xe8,  
+ 189              0x8d, 0x20,  
+ 190                               
+ 191                
+ 192              0x69, 0x5d,  
+ 193              0x0c, 0x00,  // swap the YUV  
+ 194                        
+ 195              0x33, 0x00,//0x66/0x99   
+ 196              0x0e, 0x65,  
+ 197                        
+ 198              0x13, 0xff, //Enable banding Filter   
+ 199              0x22, 0xab, //Banding Filter Minimum AEC Value   
+ 200              0x23, 0x03, //Banding Filter Step
+ 201              
+ 202              0x00, 0x00,   
+ 203           
+ 204          } ;
+ 205          code char ov7725_qvga_init[] =   
+ 206          {    
+ 207              0x12, 0x80,       
+ 208                        
+ 209              0x3d, 0x03,     
+ 210              0x17, 0x22,  
+ 211              0x18, 0xa4,      
+ 212              0x19, 0x07,  
+ 213              0x1a, 0xf0,  
+ 214              0x32, 0x00,  
+ 215              0x29, 0x50,  
+ 216              0x2c, 0x78,  
+ 217              0x2a, 0x00,  
+ 218              0x11, 0x0f,//00/01/03/07 for 60/30/15/7.5fps   
+ 219              
+ 220              0x42, 0x7f, 
+ 221              0x4d, 0x09, 
+ 222              0x63, 0xe0, 
+ 223              0x64, 0xff, 
+ 224              0x65, 0x2f,    
+ 225              0x66, 0x00,     
+ 226              0x67, 0x48, 
+ 227              
+ 228              0x13, 0xf7,  //////////////////////2011.9.4 0xff
+ 229              0x0d, 0x41,  
+ 230              0x0f, 0xc5,  
+ 231              0x14, 0x11,  
+ 232              0x22, 0x7f,//ff/7f/3f/1f for 60/30/15/7.5fps   
+ 233              0x23, 0x03,//01/03/07/0f for 60/30/15/7.5fps   
+ 234              0x24, 0x50,  
+ 235              0x25, 0x30,  
+ 236              0x26, 0xa1,  
+ 237                        
+ 238              0x6b, 0xaa,  
+ 239              0x13, 0xf7,  //////////////////////2011.9.4 0xff
+ 240                        
+ 241              0x90, 0x05,  
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 5   
+
+ 242              0x91, 0x01,  
+ 243              0x92, 0x03,  
+ 244              0x93, 0x00,  
+ 245              
+ 246              0x94, 0x5f,//b0   
+ 247              0x95, 0x53,//9d   
+ 248              0x96, 0x11,//13   
+ 249              0x97, 0x1a,//16   
+ 250              0x98, 0x3d,//7b   
+ 251              0x99, 0x5a,//91   
+ 252              0x9a, 0x1e,//1e    
+ 253                        
+ 254              0x9b, 0x00,  
+ 255              0x9c, 0x25,  
+ 256              0x9e, 0x81,      
+ 257              0xa6, 0x06,  
+ 258                
+ 259          //modified saturation initialization value by pw 2008-03-04   
+ 260              0xa7, 0x65,  
+ 261              0xa8, 0x65,  
+ 262                        
+ 263              0x7e, 0x0c,  
+ 264              0x7f, 0x16,  
+ 265              0x80, 0x2a,  
+ 266              0x81, 0x4e,  
+ 267              0x82, 0x61,  
+ 268              0x83, 0x6f,  
+ 269              0x84, 0x7b,  
+ 270              0x85, 0x86,  
+ 271              0x86, 0x8e,      
+ 272              0x87, 0x97,  
+ 273              0x88, 0xa4,  
+ 274              0x89, 0xaf,  
+ 275              0x8a, 0xc5,  
+ 276              0x8b, 0xd7,  
+ 277              0x8c, 0xe8,  
+ 278              0x8d, 0x20,  
+ 279          #if 0    
+                  0x34, 0x00, 
+                  0x33, 0x40, 
+                  0x22, 0x99, 
+                  0x23, 0x03, 
+                  0x4a, 0x10, 
+                  0x49, 0x10, 
+                  0x4b, 0x14, 
+                  0x4c, 0x17, 
+                  0x46, 0x05, 
+                  0x0e, 0x65, 
+              #endif       
+ 291              0x69, 0x5d,   
+ 292              0x0c, 0x00,  // swap the YUV
+ 293            
+ 294              0x33, 0x49,//0x66/0x99   
+ 295              0x34, 0x01,//0x66/0x99   
+ 296              0x0e, 0x65,  
+ 297                        
+ 298              0x13, 0xf7, //Enable banding Filter 
+ 299                  // 0x08, 0x00, //AECH
+ 300                  // 0x10, 0xd5, //AECL
+ 301              
+ 302              0x00, 0x00  
+ 303            
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 6   
+
+ 304          } ;
+ 305          code char ov7725_vga_ioctl[] =   
+ 306          {  
+ 307              0x2b, 0x00,  // powerfreq == DC_VAL_50HZ 
+ 308                        
+ 309              0x29, 0xa0,  
+ 310              0x2c, 0xf0,  
+ 311              0x65, 0x20, 
+ 312                  0x00, 0x00,
+ 313          };  
+ 314                
+ 315          code char ov7725_qvga_ioctl[] =  
+ 316          {                
+ 317              0x2b, 0x00, // powerfreq == DC_VAL_50HZ  
+ 318                        
+ 319              0x29, 0x50,  
+ 320              0x2c, 0x78,  
+ 321              0x65, 0x20,
+ 322                  0x00, 0x00,
+ 323          }; 
+ 324               
+ 325          code char ov7725_qqvga_ioctl[] =  
+ 326          {               
+ 327              0x2b, 0x00, // powerfreq == DC_VAL_50HZ
+ 328                        
+ 329              //0x29, 0x25,  
+ 330              //0x2c, 0x39,  
+ 331                  0x29, 0x28,  
+ 332              0x2c, 0x3c,
+ 333              0x65, 0x20,
+ 334                  0x00, 0x00,
+ 335          };
+ 336          
+ 337          void DelaySCCB(void)
+ 338          {
+ 339   1              uint i;
+ 340   1              for(i=0;i<250;i++){;}
+ 341   1      }
+ 342          // ==============================
+ 343          // start命令,SCCB的起始信号
+ 344          // 
+ 345          // 
+ 346          // ==============================
+ 347          void startSCCB(void)
+ 348          {
+ 349   1              SIO_D_SET;     //数据线高电平
+ 350   1          DelaySCCB();
+ 351   1      
+ 352   1          SIO_C_SET;     //在时钟线高的时候数据线由高至低
+ 353   1          DelaySCCB();
+ 354   1      
+ 355   1          SIO_D_CLR;
+ 356   1          DelaySCCB();
+ 357   1      
+ 358   1          SIO_C_CLR;   //数据线恢复低电平，单操作函数必要
+ 359   1          DelaySCCB();
+ 360   1      
+ 361   1      }
+ 362          
+ 363          // ==============================
+ 364          // stop命令,SCCB的停止信号
+ 365          // 
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 7   
+
+ 366          // 
+ 367          // ==============================
+ 368          void stopSCCB(void)
+ 369          {
+ 370   1              SIO_D_CLR;
+ 371   1          DelaySCCB();
+ 372   1      
+ 373   1          SIO_C_SET;
+ 374   1          DelaySCCB();
+ 375   1      
+ 376   1          SIO_D_SET;
+ 377   1          DelaySCCB();
+ 378   1      
+ 379   1      }
+ 380          
+ 381          // ==============================
+ 382          // noAck,用于连续读取中的最后一个结束周期
+ 383          // 
+ 384          // 
+ 385          // ==============================
+ 386          void noAck(void)
+ 387          {
+ 388   1              DelaySCCB();
+ 389   1              SIO_D_SET;
+ 390   1              DelaySCCB();
+ 391   1              
+ 392   1              SIO_C_SET;
+ 393   1              DelaySCCB();
+ 394   1              
+ 395   1              SIO_C_CLR;
+ 396   1              DelaySCCB();
+ 397   1              
+ 398   1              SIO_D_CLR;
+ 399   1              DelaySCCB();
+ 400   1      }
+ 401          
+ 402          
+ 403          // ==============================
+ 404          // 写入一个字节的数据到SCCB
+ 405          // 写入数据
+ 406          // 发送成功返回1，发送失败返回0
+ 407          // ==============================
+ 408          unsigned char SCCBwriteByte(uchar m_data)
+ 409          {
+ 410   1              unsigned char j,tem;
+ 411   1              for(j=0;j<8;j++) //循环8次发送数据
+ 412   1              {
+ 413   2                      if((m_data<<j)&0x80)
+ 414   2                      {
+ 415   3                              SIO_D_SET;
+ 416   3                      }
+ 417   2                      else
+ 418   2                      {
+ 419   3                              SIO_D_CLR;
+ 420   3                      }
+ 421   2                      DelaySCCB();
+ 422   2                      SIO_C_SET;
+ 423   2                      DelaySCCB();
+ 424   2                      SIO_C_CLR;
+ 425   2                      DelaySCCB();
+ 426   2              }
+ 427   1              DelaySCCB();
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 8   
+
+ 428   1              
+ 429   1              //SIO_D_IN;/*设置SDA为输入*/
+ 430   1              
+ 431   1              DelaySCCB();
+ 432   1              SIO_C_SET;
+ 433   1              DelaySCCB();
+ 434   1              DelaySCCB();
+ 435   1              DelaySCCB();
+ 436   1              PORT1 = 1;
+ 437   1      
+ 438   1              if(PORT1)
+ 439   1              {
+ 440   2                      tem=0;   //SDA=1发送失败，返回0
+ 441   2              }
+ 442   1              else
+ 443   1              {
+ 444   2                      tem=1;   //SDA=0发送成功，返回1
+ 445   2              }
+ 446   1              SIO_C_CLR;
+ 447   1              DelaySCCB();
+ 448   1              
+ 449   1              //SIO_D_OUT;/*设置SDA为输出*/
+ 450   1              return(tem);  
+ 451   1      }
+ 452          
+ 453          
+ 454          // ==============================
+ 455          // 一个字节数据读取并且返回
+ 456          // 
+ 457          // 读取到的数据
+ 458          // ==============================
+ 459          unsigned char SCCBreadByte(void)
+ 460          {
+ 461   1              unsigned char read,j;
+ 462   1              read=0x00;
+ 463   1              
+ 464   1              //SIO_D_IN;/*设置SDA为输入*/
+ 465   1              
+ 466   1              for(j=8;j>0;j--) //循环8次接收数据
+ 467   1              {                    
+ 468   2                      DelaySCCB();
+ 469   2                      SIO_C_SET;
+ 470   2                      DelaySCCB();
+ 471   2                      DelaySCCB();
+ 472   2                      DelaySCCB();//数据已经建立好
+ 473   2                      read=read<<1;
+ 474   2                      if(PORT1) 
+ 475   2                      {
+ 476   3                              read=read+1;
+ 477   3                      }
+ 478   2                      SIO_C_CLR;
+ 479   2              }
+ 480   1              //SIO_D_OUT;/*设置SDA为输出*/
+ 481   1              return(read);
+ 482   1      }
+ 483          
+ 484          // ==============================
+ 485          // 写OV7725寄存器
+ 486          // 
+ 487          // 1-成功       0-失败
+ 488          // ==============================
+ 489          unsigned char wrOV7725Reg(uchar regID, uchar regDat)
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 9   
+
+ 490          {
+ 491   1              startSCCB();
+ 492   1              if(0==SCCBwriteByte(0x42))  //0x42
+ 493   1              {
+ 494   2      
+ 495   2                      stopSCCB();
+ 496   2                      return(0);
+ 497   2              }
+ 498   1              DelaySCCB();
+ 499   1              if(0==SCCBwriteByte(regID))
+ 500   1              {
+ 501   2      
+ 502   2                      stopSCCB();
+ 503   2                      return(0);
+ 504   2              }
+ 505   1              DelaySCCB();
+ 506   1              if(0==SCCBwriteByte(regDat))
+ 507   1              {
+ 508   2                      stopSCCB();
+ 509   2                      return(0);
+ 510   2              }
+ 511   1              stopSCCB();
+ 512   1              
+ 513   1              return(1);
+ 514   1      }
+ 515          
+ 516          // ==============================
+ 517          // 读OV7725寄存器
+ 518          // 
+ 519          // 1-成功       0-失败
+ 520          // ==============================
+ 521          unsigned char rdOV7725Reg(uchar regID, uchar *regDat)
+ 522          {
+ 523   1              //通过写操作设置寄存器地址
+ 524   1              startSCCB();
+ 525   1              if(0==SCCBwriteByte(0x42))              //0x42
+ 526   1              {
+ 527   2                      stopSCCB();
+ 528   2                      return(0);
+ 529   2              }
+ 530   1              DelaySCCB();
+ 531   1              if(0==SCCBwriteByte(regID))
+ 532   1              {
+ 533   2                      stopSCCB();
+ 534   2                      return(0);
+ 535   2              }
+ 536   1              DelaySCCB();
+ 537   1              stopSCCB();
+ 538   1              
+ 539   1              DelaySCCB();
+ 540   1              DelaySCCB();
+ 541   1              DelaySCCB();
+ 542   1              
+ 543   1              //设置寄存器地址后，才是读
+ 544   1              startSCCB();
+ 545   1              if(0==SCCBwriteByte(0x43))              //0x43
+ 546   1              {
+ 547   2                      stopSCCB();
+ 548   2                      return(0);
+ 549   2              }
+ 550   1              DelaySCCB();
+ 551   1              *regDat=SCCBreadByte();
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 10  
+
+ 552   1              noAck();
+ 553   1              stopSCCB();
+ 554   1              return(1);
+ 555   1      }
+ 556          
+ 557          unsigned char Table_Write(uchar code *ptab) 
+ 558          {
+ 559   1              uchar address;
+ 560   1              uchar value;
+ 561   1              uchar code *pd=ptab;
+ 562   1              uint cnt=0;
+ 563   1      
+ 564   1              if (0x00==pd )
+ 565   1                      return FALSE;
+ 566   1                      
+ 567   1              while(1)
+ 568   1              {
+ 569   2                      address=*pd++;
+ 570   2                      value=*pd++;
+ 571   2                      if ( (0==address) && (0==value) )
+ 572   2                      {
+ 573   3                              break;
+ 574   3                      }
+ 575   2                      wrOV7725Reg(address,value);
+ 576   2                      cnt++;
+ 577   2              }
+ 578   1              
+ 579   1              return TRUE;
+ 580   1      }
+ 581          
+ 582          void ov7725_ioctl(unsigned char cmd, unsigned char val)  
+ 583          {   
+ 584   1          unsigned char regvalue = 0;
+ 585   1              unsigned char temp;
+ 586   1      
+ 587   1          switch (cmd)  
+ 588   1          {  
+ 589   2              case DC_SET_IMAGESIZE:  
+ 590   2              {  
+ 591   3                  temp = val;  
+ 592   3                  if(temp == DC_VAL_VGA)  
+ 593   3                  {  
+ 594   4                       Table_Write(ov7725_vga_ioctl); 
+ 595   4                  }  
+ 596   3                  else if(temp == DC_VAL_QVGA)  
+ 597   3                  {  
+ 598   4                       Table_Write(ov7725_qvga_ioctl); 
+ 599   4                  }  
+ 600   3                  else if(temp == DC_VAL_QQVGA)  
+ 601   3                  {  
+ 602   4                       Table_Write(ov7725_qqvga_ioctl); 
+ 603   4                  }      
+ 604   3                  break;  
+ 605   3              }  
+ 606   2                     
+ 607   2              case DC_SET_HUE:  
+ 608   2              {  
+ 609   3                  temp = val;
+ 610   3                              rdOV7725Reg(0xa6,&regvalue);
+ 611   3                  wrOV7725Reg(0xa6,regvalue|0x01); 
+ 612   3                  if(temp <0x80)  
+ 613   3                  {  
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 11  
+
+ 614   4                      wrOV7725Reg(0xaa, (temp+0x80));  
+ 615   4                      wrOV7725Reg(0xa9, (temp+0x80));  
+ 616   4                  }  
+ 617   3                  else if(temp >= 0x80&&temp <= 0xff)  
+ 618   3                  {  
+ 619   4                      wrOV7725Reg(0xaa, !temp);  
+ 620   4                      wrOV7725Reg(0xa9, !temp);  
+ 621   4                  }  
+ 622   3                  break;  
+ 623   3              }  
+ 624   2                
+ 625   2              case DC_SET_SATURATION:  
+ 626   2              {  
+ 627   3                                      temp = val;  
+ 628   3                      wrOV7725Reg(0xa7, temp);  
+ 629   3                      wrOV7725Reg(0xa8, temp);  
+ 630   3                  break;  
+ 631   3              }      
+ 632   2              case DC_SET_ADNSWITCH:  
+ 633   2              {  
+ 634   3                  temp = val;  
+ 635   3                              rdOV7725Reg(0xac,&regvalue);
+ 636   3           
+ 637   3                  if(temp == DC_VAL_ON)  
+ 638   3                  {  
+ 639   4                      wrOV7725Reg(0xac, (0x40|regvalue));  
+ 640   4                  }  
+ 641   3                  else if(temp == DC_VAL_OFF)  
+ 642   3                  {  
+ 643   4                      wrOV7725Reg(0xac, (0xbf&regvalue)); // ???  
+ 644   4                  }  
+ 645   3          
+ 646   3                  break;  
+ 647   3              }             
+ 648   2               
+ 649   2              case DC_SET_AECSWITCH:  
+ 650   2              {  
+ 651   3                  temp = val;  
+ 652   3                              rdOV7725Reg(0x13,&regvalue);
+ 653   3                  
+ 654   3                  if(temp == DC_VAL_ON)  
+ 655   3                  {  
+ 656   4                      wrOV7725Reg(0x13, (0x01|regvalue));  
+ 657   4                  }  
+ 658   3                  else if(temp == DC_VAL_OFF)  
+ 659   3                  {  
+ 660   4                      wrOV7725Reg(0x13, (0xfe&regvalue));  
+ 661   4                  }  
+ 662   3        
+ 663   3                  break;  
+ 664   3              }  
+ 665   2                        
+ 666   2              case DC_SET_AGCSWITCH:  
+ 667   2              {  
+ 668   3                  temp = val;
+ 669   3                              rdOV7725Reg(0x13,&regvalue);
+ 670   3        
+ 671   3                  if(temp == DC_VAL_ON)  
+ 672   3                  {  
+ 673   4                      wrOV7725Reg(0x13, (0x04|regvalue));  
+ 674   4                  }  
+ 675   3                  else if(temp == DC_VAL_OFF)  
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 12  
+
+ 676   3                  {  
+ 677   4                      wrOV7725Reg(0x13, (0xfb&regvalue));  
+ 678   4                  }  
+ 679   3       
+ 680   3                  break;  
+ 681   3              }     
+ 682   2              
+ 683   2                 
+ 684   2                     
+ 685   2               case DC_SET_MIRROR:  
+ 686   2              {  
+ 687   3                                      temp = val;  
+ 688   3                                      rdOV7725Reg(0x0c,&regvalue);
+ 689   3                                              
+ 690   3                      if(temp == DC_VAL_ON)  
+ 691   3                      {  
+ 692   4                          wrOV7725Reg(0x0c, (regvalue&0xbf));  
+ 693   4                      }  
+ 694   3                      else if(temp == DC_VAL_OFF)  
+ 695   3                      {         
+ 696   4                          wrOV7725Reg(0x0c, (regvalue|0x40));     
+ 697   4                      }  
+ 698   3                  break;  
+ 699   3              }     
+ 700   2               
+ 701   2      }  
+ 702   1      }
+ 703          void ov7725_device_init(unsigned char mode)  
+ 704          {  
+ 705   1          unsigned char regvalue;  
+ 706   1          int loop1;  
+ 707   1       
+ 708   1          /* reset */  
+ 709   1          // rst_ov7725();  硬件复位
+ 710   1          wrOV7725Reg(DC_COM7, 0x80);  
+ 711   1        
+ 712   1          for(loop1=0;loop1 < 5000;loop1++)  
+ 713   1          {  
+ 714   2                  ;  
+ 715   2          }  
+ 716   1        
+ 717   1          rdOV7725Reg(DC_COM7,&regvalue);  
+ 718   1          regvalue &=0x7f;    
+ 719   1          wrOV7725Reg(DC_COM7,regvalue);  
+ 720   1          /* // camera ID check
+ 721   1              rdOV7725Reg(DC_PIDH,&regvalue);
+ 722   1              rdOV7725Reg(DC_PIDL,&loop1);
+ 723   1         
+ 724   1          if((regvalue != PIDH) || (loop1 != PIDL))  
+ 725   1          {  
+ 726   1              return -EFAULT;  
+ 727   1          } 
+ 728   1              */
+ 729   1         
+ 730   1           // Table_Write(ov7725_vga_init);  
+ 731   1              if(mode == MODE_IMAGE)
+ 732   1              Table_Write(ov7725_qvga_init);
+ 733   1              else
+ 734   1                      Table_Write(ov7725_vga_init);
+ 735   1      
+ 736   1                rdOV7725Reg(0x08,&regvalue);  
+ 737   1      
+C51 COMPILER V8.08   OV7725                                                                06/04/2012 21:34:54 PAGE 13  
+
+ 738   1                rdOV7725Reg(0x10,&regvalue);
+ 739   1                
+ 740   1                rdOV7725Reg(0x13,&regvalue);  
+ 741   1       
+ 742   1      
+ 743   1              // ov7725_ioctl(DC_SET_IMAGESIZE,DC_VAL_QQVGA);
+ 744   1      //      ov7725_ioctl(DC_SET_AECSWITCH,DC_VAL_ON);       // modify@2011.5.13 21:40 DC_VAL_ON
+ 745   1      //      ov7725_ioctl(DC_SET_AGCSWITCH,DC_VAL_ON);       // modify@2011.5.13 21:34 DC_VAL_ON
+ 746   1              
+ 747   1       
+ 748   1      } 
+ 749          
+ 750          
+ 751          
+ 752           
+ 753            
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    844    ----
+   CONSTANT SIZE    =    452    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----      15
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

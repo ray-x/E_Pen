@@ -1,0 +1,7 @@
+MO dual_port_ram1024 NULL ipcore_dir/dual_port_ram1024.v vlg50/dual__port__ram1024.bin 1321191134
+MO clock_gene NULL clock_gene.v vlg42/clock__gene.bin 1321191134
+MO multiplier NULL ipcore_dir/multiplier.v vlg7B/multiplier.bin 1295162902
+MO data_proc NULL ../src/data_proc.v vlg69/data__proc.bin 1321191134
+MO top NULL ../src/top.v vlg6F/top.bin 1321191134
+MO cmos_ctrl NULL ../src/cmos_ctrl.v vlg22/cmos__ctrl.bin 1321191134
+MO dual_port_ram NULL ../src/dual_port_ram.v vlg55/dual__port__ram.bin 1278330326

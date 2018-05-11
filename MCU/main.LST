@@ -1,0 +1,263 @@
+C51 COMPILER V8.08   MAIN                                                                  06/04/2012 21:34:54 PAGE 1   
+
+
+C51 COMPILER V8.08, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.exe main.c DB OE
+
+line level    source
+
+   1          /*******************************************/
+   2          //文件名：main.c
+   3          //隶属工程：
+   4          //作者：屠斌杰（bjtu）
+   5          //创建时间：2010.12.25
+   6          //最后修改时间：
+   7          //添加完整的通信协议，上位机可以通过USB配置
+   8          //各种工作模式。此版本为F340自带USB接口版本，
+   9          //串口版本只需修改收发函数，程序构架无需修改
+  10          //描述：主文件
+  11          /*******************************************/
+  12          #include "main.h"
+  13          
+  14          
+  15          void main()
+  16          {
+  17   1      
+  18   1              uint i;
+  19   1      
+  20   1              PCA0MD &= ~0x40;                        // 关闭开门狗
+  21   1              OSCICN |= 0x03;
+  22   1              Init_Device();
+  23   1              USB_Int_Enable();                       // 使能 USB_API 中断
+  24   1              // CameraChip_Init();                   // 图像传感器初始化（默认值）
+  25   1      //      ov7725_device_init(MODE_IMAGE);
+  26   1              ProcessID = PRO_CORD_S;         // 初始化完毕进入空闲状态
+  27   1              while(1)
+  28   1              {
+  29   2                      switch(ProcessID)
+  30   2                      {
+  31   3                              case PRO_IDLE:          /*空闲状态*/
+  32   3                                                                      break;
+  33   3                              case PRO_HANDLE:        /*解析命令*/
+  34   3                                                              {       
+  35   4                                                                      IntSignal = FALSE;
+  36   4                                                                      for(i=0;i < sizeof(Host_Cmd_Header);i++)        // 检验帧头
+  37   4                                                                              if(*(USBRxBuf+i) != Host_Cmd_Header[i]){
+  38   5                                                                                      ProcessID = PRO_IDLE;
+  39   5                                                                                      break;
+  40   5                                                                                      }
+  41   4                                                                              
+  42   4                                                                      HostCmd = *(USBRxBuf + sizeof(Host_Cmd_Header));
+  43   4                                                                      switch(HostCmd)
+  44   4                                                                      {
+  45   5                                                                      
+  46   5                                                                              case HOST_CI_F340_ALIVE:        ProcessID = PRO_F340_ALIVE;
+  47   5                                                                                                                                      break;
+  48   5                                                                              case HOST_CI_CMOS_S:            ProcessID = PRO_CMOS_S;
+  49   5                                                                                                                                      break;
+  50   5                                                                              case HOST_CI_CMOS_E:            ProcessID = PRO_CMOS_E; 
+  51   5                                                                                                                                      break;
+  52   5                                                                              case HOST_CI_VID_S:                     ProcessID = PRO_VID_S;
+  53   5                                                                                                                                      break;
+  54   5                                                                              case HOST_CI_VID_E:                     ProcessID = PRO_VID_E;
+  55   5                                                                                                                                      break;
+C51 COMPILER V8.08   MAIN                                                                  06/04/2012 21:34:54 PAGE 2   
+
+  56   5                                                                              case HOST_CI_CORD_S:            ProcessID = PRO_CORD_S;
+  57   5                                                                                                                                      break;
+  58   5                                                                              case HOST_CI_CORD_E:            ProcessID = PRO_CORD_E;
+  59   5                                                                                                                                      break;
+  60   5                                                                              default:                                        ProcessID = PRO_IDLE;
+  61   5                                                                                                                                      break;
+  62   5                                                                      }
+  63   4                                                              }
+  64   3                                                              break;
+  65   3                              case PRO_F340_ALIVE:    /*从机是否准备就绪*/
+  66   3                                                                      Host_Cmd_FBack(DEV_CI_F340_ALIVE);
+  67   3                                                                      ProcessID = PRO_IDLE;
+  68   3                                                                      break;
+  69   3                              case PRO_CMOS_S:        /*开始图像传感器配置状态切换*/
+  70   3                                                                      Host_Cmd_FBack(DEV_CI_CMOS_S);
+  71   3                                                                      
+  72   3                                                                      ProcessID = PRO_IDLE;
+  73   3                                                                      break;
+  74   3                                                                      
+  75   3                              case PRO_CMOS_E:        /*结束图像传感器配置状态切换*/
+  76   3                                                                      Host_Cmd_FBack(DEV_CI_CMOS_E);
+  77   3                                                                      ProcessID = PRO_IDLE;
+  78   3                                                                      break;                                                          
+  79   3                              case PRO_VID_S:         /*开始传输图像/视频*/
+  80   3                                                                      //CameraChip_Init();
+  81   3                                                                      ov7725_device_init(MODE_IMAGE);
+  82   3                                                                      LED = 1;
+  83   3                                                                      //wrOV7725Reg(0x11,0x0f);
+  84   3                                                                      //wrOV7725Reg(0x11,0x1f);
+  85   3                                                                      Host_Cmd_FBack(DEV_CI_VID_S);
+  86   3                                                                      // CameraChip_Init(CMOS_INIT_VID);
+  87   3                                                                      ProcessID = PRO_VID_TX;
+  88   3                                                                      break;
+  89   3                              case PRO_VID_TX:        /*传输图像/视频*/
+  90   3                                                                      
+  91   3                                                                      Host_Send_Image(USBTxBuf,MAX_COLUMN_NUM,MAX_ROW_NUM);
+  92   3                                                                      //LED = ~LED;
+  93   3                                                                      break;
+  94   3                                                                      
+  95   3                              case PRO_VID_E:         /*结束传输图像/视频*/
+  96   3                                                              
+  97   3                                                                      Host_Cmd_FBack(DEV_CI_VID_E);
+  98   3                                                                      ProcessID = PRO_IDLE;
+  99   3                                                                      break;                                  
+ 100   3                              case PRO_CORD_S:        /*开始传输坐标等信息*/
+ 101   3                                                                      //CameraChip_Init();
+ 102   3                                                                      //wrOV7725Reg(0xff,0x01);
+ 103   3                                                                      ov7725_device_init(MODE_CORD);
+ 104   3                                                                      LED = 1;
+ 105   3                                                                      //wrOV7725Reg(0x11,0x00);
+ 106   3                                                                      Host_Cmd_FBack(DEV_CI_CORD_S);
+ 107   3                                                                      ProcessID = PRO_CORD_TX;
+ 108   3                                                                      // CameraChip_Init(CMOS_INIT_CORD);
+ 109   3                                                                      break;  
+ 110   3                              case PRO_CORD_TX:       /*传输坐标等信息*/
+ 111   3                                                                      //FPGA_Info_Get(USBTxBuf,MAX_INFO_NUM);
+ 112   3                                                                      Host_Send_Info(USBTxBuf);
+ 113   3                                                                                                                      
+ 114   3                                                              //      LED = ~LED;
+ 115   3                                                                      break;
+ 116   3                              case PRO_CORD_E:        /*结束传输坐标等信息*/
+ 117   3                                                                      Host_Cmd_FBack(DEV_CI_CORD_E);
+C51 COMPILER V8.08   MAIN                                                                  06/04/2012 21:34:54 PAGE 3   
+
+ 118   3                                                                      ProcessID = PRO_IDLE;
+ 119   3                                                                      break;
+ 120   3                              
+ 121   3                              
+ 122   3                              default: { ProcessID = PRO_IDLE; break; }
+ 123   3                              
+ 124   3                      }
+ 125   2              }
+ 126   1      
+ 127   1          
+ 128   1              
+ 129   1      
+ 130   1      }
+ 131          /*******************************************/
+ 132          //函数名：Init_Device
+ 133          //输入：无
+ 134          //输出：无
+ 135          //描述：C8051F340初始化函数
+ 136          /*******************************************/
+ 137          void Init_Device(void)
+ 138          {
+ 139   1          
+ 140   1              USB_Clock_Start();            // Init USB clock *before* calling USB_Init
+ 141   1              USB_Init(USB_VID,USB_PID,USB_MfrStr,USB_ProductStr,USB_SerialStr,USB_MaxPower,USB_PwAttributes,USB_bcdDev
+             -ice);
+ 142   1              
+ 143   1          Oscillator_Init();
+ 144   1              Interrupts_Init();
+ 145   1              
+ 146   1              Reset_Sources_Init();
+ 147   1              // Timer_Init();
+ 148   1          Port_IO_Init();
+ 149   1      }
+ 150          //      中断源初始化
+ 151          void Reset_Sources_Init(void)
+ 152          {
+ 153   1              RSTSRC |= 0x02;
+ 154   1      }   
+ 155          
+ 156          // 中断初始化
+ 157          void Interrupts_Init()
+ 158          {
+ 159   1              IE = 0x05;
+ 160   1              EA = 1;
+ 161   1      }
+ 162          
+ 163          // 端口初始化
+ 164          void Port_IO_Init(void)
+ 165          {
+ 166   1      
+ 167   1      //      P2MDOUT  |= 0x0C;             // Port 2 pins 0,1 set high impedence
+ 168   1              XBR0  =  0x00;
+ 169   1              XBR1  =  0x40;                // Enable Crossbar
+ 170   1          P3MDOUT   = 0x03;
+ 171   1              P0MDOUT   = 0x20;
+ 172   1      
+ 173   1      }
+ 174          // 选择内部晶振
+ 175          void Oscillator_Init(void)
+ 176          {
+ 177   1              //char i;
+ 178   1              CLKSEL |= 0x03;
+C51 COMPILER V8.08   MAIN                                                                  06/04/2012 21:34:54 PAGE 4   
+
+ 179   1      //      OSCICN    = 0x83;
+ 180   1        //  CLKMUL    = 0x80;
+ 181   1        //  for (i = 0; i < 20; i++);    // Wait 5us for initialization
+ 182   1        //  CLKMUL    |= 0xC0;
+ 183   1        //  while ((CLKMUL & 0x20) == 0);
+ 184   1        //  CLKSEL    = 0x03;
+ 185   1      
+ 186   1      } 
+ 187          // PCA初始化
+ 188          void PCA_Init(void)
+ 189          {
+ 190   1          PCA0MD    &= ~0x40;  //禁止看门狗
+ 191   1          PCA0MD    = 0x00;
+ 192   1      }
+ 193          
+ 194                   
+ 195          /*******************************************/
+ 196          //函数名：Timer0_ISR
+ 197          //输入：无
+ 198          //输出：无
+ 199          //描述：定时器0中断
+ 200          /*******************************************/
+ 201          void Timer0_ISR (void) interrupt 1 using 1
+ 202          {
+ 203   1              ;
+ 204   1      }
+ 205          
+ 206          /*******************************************/
+ 207          //函数名：Timer1_ISR
+ 208          //输入：无
+ 209          //输出：无
+ 210          //描述：定时器1中断
+ 211          /*******************************************/
+ 212          void Timer1_ISR (void) interrupt 3 using 3
+ 213          {
+ 214   1              ;
+ 215   1      }
+ 216          
+ 217          // 延时函数
+ 218          void delay_4ms(uint delay)
+ 219          {
+ 220   1              unsigned char  i,j,k;   
+ 221   1          for(i=delay;i>0;i--)   
+ 222   1          {      
+ 223   2              for(j=250;j>0;j--)   
+ 224   2              {      
+ 225   3                  for(k=47;k>0;k--)
+ 226   3                          _nop_();   
+ 227   3              }   
+ 228   2          }   
+ 229   1      }
+ 230          
+ 231          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    453    ----
+   CONSTANT SIZE    =     67    ----
+   XDATA SIZE       =    336    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      4    ----
+   IDATA SIZE       =   ----    ----
+C51 COMPILER V8.08   MAIN                                                                  06/04/2012 21:34:54 PAGE 5   
+
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

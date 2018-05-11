@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<ISELocs Version="2" Minor="2">
+	<term name="mcu_data[1]" site="P111" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[2]" site="P41" sf="T" lf="T" st="UCF"/>
+	<term name="pclk" site="P54" sf="T" lf="T" st="UCF"/>
+	<term name="led" site="P58" sf="T" lf="T" st="UCF"/>
+	<term name="nRst" site="P67" sf="T" lf="T" st="UCF"/>
+	<term name="column_start" site="P96" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_data[0]" site="P110" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_rd_clk" site="P104" sf="T" lf="T" st="UCF"/>
+	<term name="clk" site="P59" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[0]" site="P44" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_data[7]" site="P117" sf="T" lf="T" st="UCF"/>
+	<term name="frame_start" site="P93" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[7]" site="P49" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_data[5]" site="P115" sf="T" lf="T" st="UCF"/>
+	<term name="pwdn" site="P37" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[5]" site="P46" sf="T" lf="T" st="UCF"/>
+	<term name="cmos_hsync" site="P50" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_wr_clk" site="P105" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_data[6]" site="P116" sf="T" lf="T" st="UCF"/>
+	<term name="cmos_vsync" site="P53" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_data[3]" site="P113" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[6]" site="P47" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[4]" site="P45" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_rd_en" site="P92" sf="T" lf="T" st="UCF"/>
+	<term name="cmos_rst" site="P51" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_data[4]" site="P114" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[3]" site="P43" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_wr_en" site="P120" sf="T" lf="T" st="UCF"/>
+	<term name="mcu_data[2]" site="P112" sf="T" lf="T" st="UCF"/>
+	<term name="xclk" site="P48" sf="T" lf="T" st="UCF"/>
+	<term name="pix_cmos[1]" site="P42" sf="T" lf="T" st="UCF"/>
+</ISELocs>
+

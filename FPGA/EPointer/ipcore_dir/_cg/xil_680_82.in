@@ -1,0 +1,77 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_COMMAND_CONTEXT STRING webbrowserpath F:\Program Files\Internet Explorer\iexplore.exe -nohome
+SET_COMMAND_CONTEXT STRING pdfviewerpath F:\Program Files\pdf-viewer\PDFXCview.exe 
+SET_COMMAND_CONTEXT INT mainwindowxcoord 0
+SET_COMMAND_CONTEXT INT mainwindowycoord 0
+SET_COMMAND_CONTEXT INT mainwindowwidth 200
+SET_COMMAND_CONTEXT INT mainwindowheight 400
+SET_PREFERENCE flowvendor Foundation_ISE
+SET_PREFERENCE verilogsim True
+SET_PREFERENCE vhdlsim True
+SET_PREFERENCE subworkingdirectory E:\tbj\ISEWork\EPointer_BK20101008\EPointer_FPGA\EPointer\ipcore_dir\_cg
+SET_PREFERENCE workingdirectory E:\tbj\ISEWork\EPointer_BK20101008\EPointer_FPGA\EPointer\ipcore_dir\
+SET_PREFERENCE speedgrade -4
+SET_PREFERENCE simulationfiles Behavioral
+SET_PREFERENCE asysymbol True
+SET_PREFERENCE addpads False
+SET_PREFERENCE outputdirectory E:\tbj\ISEWork\EPointer_BK20101008\EPointer_FPGA\EPointer\ipcore_dir\
+SET_PREFERENCE device xc3s50an
+SET_PREFERENCE projectname coregen
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE foundationsym False
+SET_PREFERENCE package tqg144
+SET_PREFERENCE createndf False
+SET_PREFERENCE designentry VHDL
+SET_PREFERENCE devicefamily spartan3a
+SET_PREFERENCE formalverification False
+SET_PREFERENCE removerpms False
+SET_PARAMETER register_portb_output_of_memory_primitives false
+SET_PARAMETER write_depth_a 1024
+SET_PARAMETER operating_mode_a READ_FIRST
+SET_PARAMETER operating_mode_b READ_FIRST
+SET_PARAMETER write_width_a 8
+SET_PARAMETER write_width_b 8
+SET_PARAMETER ecc false
+SET_PARAMETER use_regcea_pin false
+SET_PARAMETER primitive 8kx2
+SET_PARAMETER memory_type Simple_Dual_Port_RAM
+SET_PARAMETER use_rsta_pin false
+SET_PARAMETER byte_size 9
+SET_PARAMETER disable_out_of_range_warnings false
+SET_PARAMETER use_ramb16bwer_reset_behavior false
+SET_PARAMETER pipeline_stages 0
+SET_PARAMETER use_regceb_pin true
+SET_PARAMETER remaining_memory_locations 0
+SET_PARAMETER reset_memory_latch_a false
+SET_PARAMETER reset_memory_latch_b false
+SET_PARAMETER use_byte_write_enable false
+SET_PARAMETER enable_a Use_ENA_Pin
+SET_PARAMETER enable_b Use_ENB_Pin
+SET_PARAMETER use_rstb_pin false
+SET_PARAMETER register_porta_output_of_memory_core false
+SET_PARAMETER component_name dual_port_ram1024
+SET_PARAMETER assume_synchronous_clk false
+SET_PARAMETER disable_collision_warnings false
+SET_PARAMETER algorithm Minimum_Area
+SET_PARAMETER fill_remaining_memory_locations false
+SET_PARAMETER use_error_injection_pins false
+SET_PARAMETER read_width_a 8
+SET_PARAMETER read_width_b 8
+SET_PARAMETER reset_type SYNC
+SET_PARAMETER register_porta_output_of_memory_primitives false
+SET_PARAMETER output_reset_value_a 0
+SET_PARAMETER output_reset_value_b 0
+SET_PARAMETER load_init_file false
+SET_PARAMETER register_portb_output_of_memory_core true
+SET_PARAMETER coe_file no_coe_file_loaded
+SET_PARAMETER error_injection_type Single_Bit_Error_Injection
+SET_PARAMETER collision_warnings ALL
+SET_PARAMETER reset_priority_a CE
+SET_PARAMETER reset_priority_b CE
+SET_CORE_CLASS com.xilinx.ip.blk_mem_gen_v3_1.blk_mem_gen_v3_1
+SET_CORE_PATH D:\Xilinx\11.1\ISE\coregen\ip\xilinx\primary\com\xilinx\ip\blk_mem_gen_v3_1\
+SET_CORE_NAME Block Memory Generator
+SET_CORE_VERSION 3.1

@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator L.33
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o C:\Users\bjtu\SunSensor_Prj2010\EPointer_BK20101222\EPointer_FPGA\EPointer//top01 -s 128 -u 0 C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.bit -spi 
+
+PROM C:\Users\bjtu\SunSensor_Prj2010\EPointer_BK20101222\EPointer_FPGA\EPointer\top01.prm map: Thu Dec 23 11:26:43 2010
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          128K
+PROM start    0000:0000
+PROM end      0001:ffff
+PROM checksum 012e61e1
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0000:d5ad     Dec 19 21:01:40 2010 C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.bit

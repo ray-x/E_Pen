@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+D:\Xilinx\11.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise EPointer.ise -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

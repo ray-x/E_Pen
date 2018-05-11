@@ -1,0 +1,33 @@
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "clock_gene_ins/C | SETUP       |     3.745ns|     6.255ns|       0|           0
+  LK2X_BUF" derived from  NET "clock_gene_i | HOLD        |     0.866ns|            |       0|           0
+  ns/CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "clock_gene_ins/CLKIN_IBUFG_OUT" PERI | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
+  OD = 20 ns HIGH 50%                       |             |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for clock_gene_ins/CLKIN_IBUFG_OUT
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|clock_gene_ins/CLKIN_IBUFG_OUT |     20.000ns|      6.000ns|     12.510ns|            0|            0|            0|         2610|
+| clock_gene_ins/CLK2X_BUF      |     10.000ns|      6.255ns|          N/A|            0|            0|         2610|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+

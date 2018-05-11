@@ -1,0 +1,99 @@
+Release 11.1 Map L.33 (nt)
+Xilinx Map Application Log File for Design 'top'
+
+Design Information
+------------------
+Command Line   : map -ise EPointer.ise -intstyle ise -p xc3s50an-tqg144-4 -cm
+area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+Target Device  : xc3s50an
+Target Package : tqg144
+Target Speed   : -4
+Mapper Version : spartan3a -- $Revision: 1.51 $
+Mapped Date    : Sun Nov 13 21:32:26 2011
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s50an' is a WebPack part.
+WARNING:Security:42 - Your license support version '2010.04' for ISE expires in
+-562 days.
+----------------------------------------------------------------------
+No such feature exists.
+Feature:       WebPack
+License path: 
+C:/.Xilinx\license.lic;C:/.Xilinx\mylicense.lic;D:\Xilinx\11.1\ISE/data\*.lic;
+FLEXnet Licensing error:-5,357.  System Error: 2 ""
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.acresso.com".
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+WARNING:LIT:243 - Logical network led<2> has no load.
+WARNING:LIT:395 - The above warning message base_net_load_rule is repeated 2
+   more times for the following (max. 5 shown):
+   led<1>,
+   mcu_wr_clk_IBUF
+   To see the details of these warning messages, please use the -detail switch.
+Mapping design into LUTs...
+WARNING:LIT:176 - Clock buffer is designated to drive clock loads. BUFGMUX
+   symbol "physical_group_xclk_OBUF/clock_gene_ins/CLKFX_BUFG_INST" (output
+   signal=xclk_OBUF) has a mix of clock and non-clock loads. The non-clock loads
+   are:
+   Pin D of cmos_ctrl_ins/clk24_r
+   Pin I1 of cmos_ctrl_ins/col_cnt_and00001
+   Pin I1 of cmos_ctrl_ins/xcoordinate_sum_and000026
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+Updating timing models...
+WARNING:PhysDesignRules:367 - The signal <mcu_wr_clk_IBUF> is incomplete. The
+   signal does not drive any load pins in the design.
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    4
+Logic Utilization:
+  Number of Slice Flip Flops:           206 out of   1,408   14%
+  Number of 4 input LUTs:                83 out of   1,408    5%
+Logic Distribution:
+  Number of occupied Slices:            146 out of     704   20%
+    Number of Slices containing only related logic:     146 out of     146 100%
+    Number of Slices containing unrelated logic:          0 out of     146   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         171 out of   1,408   12%
+    Number used as logic:                83
+    Number used as a route-thru:         88
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 32 out of     108   29%
+  Number of BUFGMUXs:                     3 out of      24   12%
+  Number of DCMs:                         1 out of       2   50%
+  Number of RAMB16BWEs:                   2 out of       3   66%
+
+Average Fanout of Non-Clock Nets:                2.54
+
+Peak Memory Usage:  170 MB
+Total REAL time to MAP completion:  3 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "top_map.mrp" for details.

@@ -1,0 +1,24 @@
+【FPGA代码】
+位置：./FPGA
+./FPGA/src：verilog文件,文件说明见 ./FPGA/src/List.txt
+./FPGA/EPointer：FPGA工程目录,top.bit文件可直接下载运行
+./FPGA/sim：仿真
+
+ISE版本：ISE 11.1 (Xilinx_11.1_WebPack_SFD.iso)
+
+
+【MCU代码】
+位置：./MCU
+开发环境：Silicon Laboratories + Keil3 编译器
+
+【VC代码】
+PC端代码在./TipTopPenBeta文件夹下
+
+【内参标定部分】
+由于测试阶段，内参标定单独做了个程序用来标定内参，标定实例文件在"./内参标定程序" 文件夹下
+Intrinsic.xml为内参文件，Ext.xml为外参
+
+【消畸测试】
+1.，里面包含了原始图片和消除畸变后的图片，camera.yml为标定得到的实际参数；
+2.VC写的内参 标定程序，代码比较混乱，代码在./cvCalTst.rar
+

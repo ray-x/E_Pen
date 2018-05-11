@@ -1,0 +1,11 @@
+Storage Target: Non-Volatile Spartan3AN
+xc3s50an               [1048576]
+FF
+Beta01
+E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer
+
+MCS
+No
+1
+No
+No

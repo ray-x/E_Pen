@@ -1,0 +1,1094 @@
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.xst" -ofn "C:/Users/bjtu/ISEWork/EPointer/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/ISEWork/EPointer/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.xst" -ofn "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/tbj/ISEWork/EPointer_BK20101008/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/bjtu/SunSensor_Prj2010/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.xst" -ofn "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/SS_Prj_Root/EPointer_BK20101222/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/20110104TestSS/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+xst -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.xst" -ofn "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/EP_Prj_Root/EP_Prj_Root/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "C:/Users/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 
+xst -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -ifn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.xst" -ofn "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/top.syr" 
+ngdbuild -ise "EPointer.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s50an-tqg144-4 top.ngc top.ngd  
+map -ise "EPointer.ise" -intstyle ise -p xc3s50an-tqg144-4 -cm area -ir off -pr off -c 100 -o top_map.ncd top.ngd top.pcf 
+par -ise "EPointer.ise" -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf 
+trce -ise "E:/project_EE/EP_Prj_Root/EPointer_FPGA20110119/EPointer_FPGA/EPointer/EPointer.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top.twx top.ncd -o top.twr top.pcf 
+bitgen -ise "EPointer.ise" -intstyle ise -f top.ut top.ncd 

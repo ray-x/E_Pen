@@ -1,0 +1,235 @@
+Release 11.1 par L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+ZJU-F00ADBA7B9A::  Sun Nov 13 21:32:32 2011
+
+par -ise EPointer.ise -w -intstyle ise -ol std -t 1 top_map.ncd top.ncd top.pcf
+ 
+
+
+Constraints file: top.pcf.
+Loading device for application Rf_Device from file '3s50a.nph' in environment D:\Xilinx\11.1\ISE.
+   "top" is an NCD, version 3.2, device xc3s50an, package tqg144, speed -4
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc3s50an' is a WebPack part.
+WARNING:Security:42 - Your license support version '2010.04' for ISE expires in -562 days.
+
+----------------------------------------------------------------------
+No such feature exists.
+Feature:       WebPack
+License path:  C:/.Xilinx\license.lic;C:/.Xilinx\mylicense.lic;D:\Xilinx\11.1\ISE/data\*.lic;
+FLEXnet Licensing error:-5,357.  System Error: 2 ""
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.acresso.com".
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.41 2009-03-03".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          32 out of 108    29%
+
+   Number of External Input IOBs                 18
+
+      Number of External Input IBUFs             18
+        Number of LOCed External Input IBUFs     18 out of 18    100%
+
+
+   Number of External Output IOBs                14
+
+      Number of External Output IOBs             14
+        Number of LOCed External Output IOBs     14 out of 14    100%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        3 out of 24     12%
+   Number of DCMs                            1 out of 2      50%
+   Number of RAMB16BWEs                      2 out of 3      66%
+   Number of Slices                        146 out of 704    20%
+      Number of SLICEMs                      0 out of 352     0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+Starting initial Timing Analysis.  REAL time: 1 secs 
+Finished initial Timing Analysis.  REAL time: 1 secs 
+
+WARNING:Par:288 - The signal mcu_wr_clk_IBUF has no load.  PAR will not attempt to route this signal.
+
+Starting Placer
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:650041af) REAL time: 3 secs 
+
+Phase 2.7  Design Feasibility Check
+Phase 2.7  Design Feasibility Check (Checksum:650041af) REAL time: 3 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:650041af) REAL time: 3 secs 
+
+WARNING:Place:414 - The input design contains local clock signal(s). To get a better result, we recommend users run map
+   with the "-timing" option set before starting the placement.
+Phase 4.2  Initial Clock and IO Placement
+
+..........
+WARNING:Place:1013 - A clock IOB / DCM component pair have been found that are not placed at an optimal clock IOB / DCM
+   site pair.  The clock component <clock_gene_ins/DCM_SP_INST> is placed at site <DCM_X1Y0>.  The clock IO/DCM site can
+   be paired if they are placed/locked in the same quadrant.  The IO component <clk> is placed at site <P59>.  This will
+   not allow the use of the fast path between the IO and the Clock buffer. This is normally an ERROR but the
+   CLOCK_DEDICATED_ROUTE constraint was applied on COMP.PIN <clk.PAD> allowing your design to continue. This constraint
+   disables all clock placer rules related to the specified COMP.PIN. The use of this override is highly discouraged as
+   it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+Phase 4.2  Initial Clock and IO Placement (Checksum:71c9f505) REAL time: 4 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:71c9f505) REAL time: 4 secs 
+
+Phase 6.8  Global Placement
+....
+...................
+......
+....
+Phase 6.8  Global Placement (Checksum:c57283b1) REAL time: 4 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:c57283b1) REAL time: 4 secs 
+
+Phase 8.18  Placement Optimization
+Phase 8.18  Placement Optimization (Checksum:e5ee1262) REAL time: 4 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:e5ee1262) REAL time: 4 secs 
+
+Total REAL time to Placer completion: 4 secs 
+Total CPU  time to Placer completion: 4 secs 
+Writing design to file top.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 879 unrouted;      REAL time: 5 secs 
+
+Phase  2  : 738 unrouted;      REAL time: 5 secs 
+
+Phase  3  : 143 unrouted;      REAL time: 5 secs 
+
+Phase  4  : 143 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+
+Phase  5  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+
+Updating file: top.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+
+Phase  7  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+
+Phase  8  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 6 secs 
+WARNING:Route:455 - CLK Net:data_proc_ins/mcu_rd_clk_r may have excessive skew because 
+      2 CLK pins and 2 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 6 secs 
+Total CPU time to Router completion: 5 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|           CLK_96MHZ | BUFGMUX_X1Y10| No   |  102 |  0.093     |  0.553      |
++---------------------+--------------+------+------+------------+-------------+
+|           pclk_IBUF |         Local|      |    4 |  0.989     |  1.741      |
++---------------------+--------------+------+------+------------+-------------+
+|data_proc_ins/mcu_rd |              |      |      |            |             |
+|              _clk_r |         Local|      |   12 |  0.692     |  3.004      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0, Component Switching Limit: 0)
+
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  PERIOD analysis for net "clock_gene_ins/C | SETUP       |     3.752ns|     6.248ns|       0|           0
+  LK2X_BUF" derived from  NET "clock_gene_i | HOLD        |     0.900ns|            |       0|           0
+  ns/CLKIN_IBUFG_OUT" PERIOD = 20 ns HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+------------------------------------------------------------------------------------------------------
+  NET "clock_gene_ins/CLKIN_IBUFG_OUT" PERI | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
+  OD = 20 ns HIGH 50%                       |             |            |            |        |            
+------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Derived Constraints for clock_gene_ins/CLKIN_IBUFG_OUT
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths Analyzed       |
+|           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+|clock_gene_ins/CLKIN_IBUFG_OUT |     20.000ns|      6.000ns|     12.496ns|            0|            0|            0|         2610|
+| clock_gene_ins/CLK2X_BUF      |     10.000ns|      6.248ns|          N/A|            0|            0|         2610|            0|
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+All constraints were met.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+WARNING:Par:283 - There are 1 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
+
+Total REAL time to PAR completion: 7 secs 
+Total CPU time to PAR completion: 6 secs 
+
+Peak Memory Usage:  155 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+Timing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 6
+Number of info messages: 0
+
+Writing design to file top.ncd
+
+
+
+PAR done!
